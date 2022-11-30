@@ -37,11 +37,11 @@ def Mark(level):
         case "R":
             return "24.5%"
         case _:
-            return "-1"
+            return "invalid input"
 
 
 def main():
-   # Gets the user's grade 
+    # Gets the user's grade
     user_level = input("What is your grade: ")
 
     # Call the function to convert the user level to a percentage
@@ -50,6 +50,7 @@ def main():
     # Checks for invalid input
     if user_mark == -1:
         print("Please input a valid grade")
+
 
     # Displays the middle mark to the user
     else:
